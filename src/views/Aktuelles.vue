@@ -51,6 +51,9 @@
               <td
                 rowspan="2"
                 class="date-time"
+                :class="
+                  display.xs.value && !item.isFinished ? 'not-finished' : ''
+                "
                 :style="
                   display.xs.value && item.isFinished ? 'display: none' : ''
                 "
@@ -231,6 +234,10 @@ function getResults(results) {
 @media (max-width: 768px) {
   .date-time {
     width: 50%;
+  }
+
+  .date-time.not-finished {
+    width: 30%;
   }
 
   .club-logo {

@@ -2,7 +2,12 @@
   <header>
     <div class="bg-primary w-100 belt position-absolute"></div>
     <div class="inner-belt-container">
-      <img class="logo" @click="redirectHome" src="/rbs.svg" />
+      <img
+        class="logo"
+        :class="display.smAndDown.value ? 'mobile-logo' : ''"
+        @click="redirectHome"
+        src="/rbs.svg"
+      />
       <div class="hidden-sm-and-down navbar">
         <!--        <v-btn to="/" variant="text" :ripple="false">Home</v-btn>-->
         <v-btn to="/aktuelles" variant="text" :ripple="false">Aktuelles</v-btn>
@@ -124,6 +129,10 @@ header {
 .logo {
   width: 80px;
   cursor: pointer;
+}
+
+.logo.mobile-logo {
+  margin-left: calc(50% - 35px);
 }
 
 .v-btn {
