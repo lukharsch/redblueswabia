@@ -45,4 +45,13 @@ main {
     min-height: calc(100vh - 250px);
   }
 }
+
+a {
+  color: rgb(122, 165, 214);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
 </style>

@@ -3,7 +3,7 @@
     <div class="bg-primary w-100 belt position-absolute"></div>
     <div class="inner-belt-container">
       <img class="logo" @click="redirectHome" src="/rbs.svg" />
-      <div class="hidden-md-and-down navbar">
+      <div class="hidden-sm-and-down navbar">
         <!--        <v-btn to="/" variant="text" :ripple="false">Home</v-btn>-->
         <v-btn to="/aktuelles" variant="text" :ripple="false">Aktuelles</v-btn>
         <v-btn to="/vorstandschaft" variant="text" :ripple="false">
@@ -15,7 +15,7 @@
         </v-btn>
         <v-btn to="/kontakt" variant="text" :ripple="false">Kontakt</v-btn>
       </div>
-      <div class="hidden-lg-and-up">
+      <div class="hidden-md-and-up">
         <v-btn
           @click="openDrawer"
           icon="mdi-menu"

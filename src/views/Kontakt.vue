@@ -1,5 +1,5 @@
 <template>
-  <Title title="Kontakt"></Title>
+  <Title title="Kontakt" subtitle="Nimm gerne Kontakt mit uns auf"></Title>
 </template>
 
 <script setup>

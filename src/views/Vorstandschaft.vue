@@ -1,5 +1,8 @@
 <template>
-  <Title title="Vorstandschaft"></Title>
+  <Title
+    title="Vorstandschaft"
+    subtitle="Die Vorstandschaft hinter dem Fanclub"
+  ></Title>
 </template>
 
 <script setup>
