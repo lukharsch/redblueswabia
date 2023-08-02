@@ -27,7 +27,7 @@
           ></v-btn>-->
           <router-link
             class="link text-caption text-tertiary ml-2"
-            to="/impressum"
+            to="./impressum"
           >
             Impressum
           </router-link>

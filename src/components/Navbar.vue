@@ -10,15 +10,15 @@
       />
       <div class="hidden-sm-and-down navbar">
         <!--        <v-btn to="/" variant="text" :ripple="false">Home</v-btn>-->
-        <v-btn to="/aktuelles" variant="text" :ripple="false">Aktuelles</v-btn>
-        <v-btn to="/vorstandschaft" variant="text" :ripple="false">
+        <v-btn to="./aktuelles" variant="text" :ripple="false">Aktuelles</v-btn>
+        <v-btn to="./vorstandschaft" variant="text" :ripple="false">
           Vorstandschaft
         </v-btn>
-        <v-btn to="/bilder" variant="text" :ripple="false">Bilder</v-btn>
-        <v-btn to="/mitglied-werden" variant="text" :ripple="false">
+        <v-btn to="./bilder" variant="text" :ripple="false">Bilder</v-btn>
+        <v-btn to="./mitglied-werden" variant="text" :ripple="false">
           Mitglied werden
         </v-btn>
-        <v-btn to="/kontakt" variant="text" :ripple="false">Kontakt</v-btn>
+        <v-btn to="./kontakt" variant="text" :ripple="false">Kontakt</v-btn>
       </div>
       <div class="hidden-md-and-up">
         <v-btn
@@ -45,28 +45,28 @@
       style="top: 20px; right: 20px"
       @click="closeDrawer"
     ></v-btn>
-    <v-btn to="/aktuelles" @click="closeDrawer" variant="text" :ripple="false">
+    <v-btn to="./aktuelles" @click="closeDrawer" variant="text" :ripple="false">
       Aktuelles
     </v-btn>
     <v-btn
-      to="/vorstandschaft"
+      to="./vorstandschaft"
       @click="closeDrawer"
       variant="text"
       :ripple="false"
     >
       Vorstandschaft
     </v-btn>
-    <v-btn to="/bilder" @click="closeDrawer" variant="text" :ripple="false">
+    <v-btn to="./bilder" @click="closeDrawer" variant="text" :ripple="false">
       Bilder
     </v-btn>
     <v-btn
-      to="/mitglied-werden"
+      to="./mitglied-werden"
       @click="closeDrawer"
       variant="text"
       :ripple="false"
       >Mitglied werden</v-btn
     >
-    <v-btn to="/kontakt" @click="closeDrawer" variant="text" :ripple="false"
+    <v-btn to="./kontakt" @click="closeDrawer" variant="text" :ripple="false"
       >Kontakt</v-btn
     >
   </div>
@@ -83,7 +83,7 @@ const display = useDisplay();
 const drawer = ref(false);
 
 function redirectHome() {
-  router.push("/");
+  router.push("./");
 }
 
 function openDrawer() {

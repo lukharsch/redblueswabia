@@ -47,12 +47,12 @@
   </div>
   <div class="mt-10">
     Wenn du unserem Fanclub beitreten möchtest, schau gerne
-    <router-link to="/mitglied-werden">hier</router-link> vorbei. <br /><br />
+    <router-link to="./mitglied-werden">hier</router-link> vorbei. <br /><br />
     Gerne kannst du dir im Folgenden auch unsere Vereinssatzung durchlesen.
   </div>
   <v-btn
     color="secondary"
-    href="/vereinssatzung_red-blue-swabia.pdf"
+    href="./vereinssatzung_red-blue-swabia.pdf"
     target="_blank"
     class="mt-5 mb-10"
   >
@@ -69,9 +69,9 @@ const display = useDisplay();
 const sliderValue = ref(0);
 
 const sliderImages = [
-  "/vereinssitzung.webp",
-  "/vereinssitzung2.webp",
-  "/vereinssitzung3.webp",
+  "./vereinssitzung.webp",
+  "./vereinssitzung2.webp",
+  "./vereinssitzung3.webp",
 ];
 
 function prevSlide() {
